@@ -147,18 +147,12 @@
 }
 
 .home-bg::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  /* Corrigi um pequeno erro de sintaxe com as aspas no final da sua URL */
-  background-image: url("https://images.unsplash.com/photo-1446776877081-d282a0f896e2?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-  background-size: cover; /* Fundamental para a imagem cobrir o espaço e o zoom funcionar bem */
-  background-position: center;
-  pointer-events: none;
-  
-  /* Animação de 15 segundos, infinita, que vai (zoom in) e volta (zoom out) suavemente */
-  animation: zoomInBg 15s infinite alternate ease-in-out;
-}
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: url(https://images.unsplash.com/photo-1534996858221-380b92700493?q=80&w=1331&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)' opacity='0.04'/%3E%3C/svg%3E");
+      pointer-events: none;
+    }
 
 /* Keyframes que criam o efeito de aproximação */
 @keyframes zoomInBg {
